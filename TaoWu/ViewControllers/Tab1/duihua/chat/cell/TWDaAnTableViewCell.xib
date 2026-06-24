@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="492" id="KGk-i7-Jjw" customClass="TWDaAnTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8g-uS-3et">
+                        <rect key="frame" x="16" y="12" width="358" height="309"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dh_wt" translatesAutoresizingMaskIntoConstraints="NO" id="aam-EM-4Eb">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="309"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-6H-zSb">
+                                <rect key="frame" x="20" y="154" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="paP-51-IQ1"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M0O-4Z-kIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-fi-9Z5">
+                                <rect key="frame" x="184" y="154" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Xos-0q-7BN"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WGb-RH-niG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiB-4j-HYq">
+                                <rect key="frame" x="20" y="204" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EWw-k5-PRD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZYB-Qu-v4o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nb-du-8z6">
+                                <rect key="frame" x="20" y="254" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="59O-92-YQQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sPb-u1-JF6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-V2-THT">
+                                <rect key="frame" x="184" y="204" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gwP-EP-5iw"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qd5-Gi-9f4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9O-qb-hZ1">
+                                <rect key="frame" x="184" y="254" width="154" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tqZ-uV-wQ8"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="tw_choosedefaultQuestionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cEh-Oo-4JS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="t3O-fi-9Z5" firstAttribute="top" secondItem="a8g-uS-3et" secondAttribute="top" constant="154" id="5ss-mw-4dY"/>
+                            <constraint firstAttribute="trailing" secondItem="7Qg-V2-THT" secondAttribute="trailing" constant="20" id="6Ea-xq-8jh"/>
+                            <constraint firstItem="aam-EM-4Eb" firstAttribute="top" secondItem="a8g-uS-3et" secondAttribute="top" id="SSI-ta-iDo"/>
+                            <constraint firstItem="TMe-6H-zSb" firstAttribute="top" secondItem="a8g-uS-3et" secondAttribute="top" constant="154" id="TiU-9X-qk0"/>
+                            <constraint firstItem="8Nb-du-8z6" firstAttribute="leading" secondItem="a8g-uS-3et" secondAttribute="leading" constant="20" id="VY5-bL-HFw"/>
+                            <constraint firstAttribute="bottom" secondItem="aam-EM-4Eb" secondAttribute="bottom" id="W5G-Lr-8hx"/>
+                            <constraint firstItem="IiB-4j-HYq" firstAttribute="trailing" secondItem="TMe-6H-zSb" secondAttribute="trailing" id="XbS-Gw-7hu"/>
+                            <constraint firstItem="Y9O-qb-hZ1" firstAttribute="leading" secondItem="t3O-fi-9Z5" secondAttribute="leading" id="ZFW-yv-iMD"/>
+                            <constraint firstItem="8Nb-du-8z6" firstAttribute="top" secondItem="IiB-4j-HYq" secondAttribute="bottom" constant="15" id="Znu-oP-jpf"/>
+                            <constraint firstItem="t3O-fi-9Z5" firstAttribute="leading" secondItem="TMe-6H-zSb" secondAttribute="trailing" constant="10" id="ah1-hF-zP7"/>
+                            <constraint firstItem="8Nb-du-8z6" firstAttribute="trailing" secondItem="TMe-6H-zSb" secondAttribute="trailing" id="amD-5W-vtz"/>
+                            <constraint firstItem="IiB-4j-HYq" firstAttribute="top" secondItem="TMe-6H-zSb" secondAttribute="bottom" constant="15" id="dcP-qO-Xwo"/>
+                            <constraint firstItem="Y9O-qb-hZ1" firstAttribute="top" secondItem="7Qg-V2-THT" secondAttribute="bottom" constant="15" id="e8Q-Zk-kmO"/>
+                            <constraint firstItem="t3O-fi-9Z5" firstAttribute="width" secondItem="TMe-6H-zSb" secondAttribute="width" id="hK5-jG-lVN"/>
+                            <constraint firstItem="IiB-4j-HYq" firstAttribute="leading" secondItem="a8g-uS-3et" secondAttribute="leading" constant="20" id="jZb-Nk-6WE"/>
+                            <constraint firstAttribute="trailing" secondItem="t3O-fi-9Z5" secondAttribute="trailing" constant="20" id="jgJ-mu-1r3"/>
+                            <constraint firstItem="TMe-6H-zSb" firstAttribute="leading" secondItem="a8g-uS-3et" secondAttribute="leading" constant="20" id="lsU-tS-VnP"/>
+                            <constraint firstAttribute="trailing" secondItem="aam-EM-4Eb" secondAttribute="trailing" id="qSL-Ac-n9f"/>
+                            <constraint firstItem="aam-EM-4Eb" firstAttribute="leading" secondItem="a8g-uS-3et" secondAttribute="leading" id="r5l-s7-g87"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9O-qb-hZ1" secondAttribute="trailing" constant="20" id="y72-9b-H1y"/>
+                            <constraint firstAttribute="height" constant="309" id="yJD-RF-BzF"/>
+                            <constraint firstItem="7Qg-V2-THT" firstAttribute="leading" secondItem="t3O-fi-9Z5" secondAttribute="leading" id="yPa-Y0-3CE"/>
+                            <constraint firstItem="7Qg-V2-THT" firstAttribute="top" secondItem="t3O-fi-9Z5" secondAttribute="bottom" constant="15" id="zsJ-OF-efD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="a8g-uS-3et" secondAttribute="bottom" constant="9" id="Sbj-Vc-Rxd"/>
+                    <constraint firstAttribute="trailing" secondItem="a8g-uS-3et" secondAttribute="trailing" constant="16" id="cfL-Z6-evm"/>
+                    <constraint firstItem="a8g-uS-3et" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pXl-Fn-uv4"/>
+                    <constraint firstItem="a8g-uS-3et" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="q24-ml-zQd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="224.61538461538461" y="147.15639810426541"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dh_wt" width="358" height="309"/>
+    </resources>
+</document>

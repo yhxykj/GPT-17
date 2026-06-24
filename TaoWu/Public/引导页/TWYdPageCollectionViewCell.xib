@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TWYdPageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yd_one" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-TM-R97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pr-Pq-FBH">
+                        <rect key="frame" x="16" y="577" width="343" height="54"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="yd_next"/>
+                        <connections>
+                            <action selector="tw_nextButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sat-4s-5BH"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="lbR-TM-R97" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Wq-ny-ft9"/>
+                <constraint firstAttribute="bottom" secondItem="lbR-TM-R97" secondAttribute="bottom" id="8OQ-c6-VLN"/>
+                <constraint firstItem="lbR-TM-R97" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CjO-JA-tbQ"/>
+                <constraint firstAttribute="trailing" secondItem="6Pr-Pq-FBH" secondAttribute="trailing" constant="16" id="F13-xC-eRq"/>
+                <constraint firstAttribute="bottom" secondItem="6Pr-Pq-FBH" secondAttribute="bottom" constant="36" id="GDi-Dd-3Fj"/>
+                <constraint firstAttribute="trailing" secondItem="lbR-TM-R97" secondAttribute="trailing" id="euU-8O-GJa"/>
+                <constraint firstItem="6Pr-Pq-FBH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="gba-ff-9cX"/>
+            </constraints>
+            <size key="customSize" width="350" height="528"/>
+            <connections>
+                <outlet property="tw_bg_image" destination="lbR-TM-R97" id="6Vl-kX-eVo"/>
+                <outlet property="tw_next_button" destination="6Pr-Pq-FBH" id="2k2-i4-GYj"/>
+            </connections>
+            <point key="canvasLocation" x="262.59541984732823" y="61.971830985915496"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="yd_next" width="334" height="54"/>
+        <image name="yd_one" width="390" height="844"/>
+    </resources>
+</document>

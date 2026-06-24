@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWLoginViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginmainbg" translatesAutoresizingMaskIntoConstraints="NO" id="BN0-ge-nU5">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEe-ND-o7n">
+                    <rect key="frame" x="40" y="541" width="310" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="phonelogin"/>
+                    <connections>
+                        <action selector="tw_minePhoneAction:" destination="-1" eventType="touchUpInside" id="Hl6-Kf-vUp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhF-Za-5kV">
+                    <rect key="frame" x="40" y="458" width="310" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="yijiandenglu"/>
+                    <connections>
+                        <action selector="tw_loginButtonAction:" destination="-1" eventType="touchUpInside" id="w0N-d3-gpA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Cbe-BO-2hs"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rhF-Za-5kV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="0vS-U8-pI5"/>
+                <constraint firstItem="BN0-ge-nU5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2dl-s1-3kP"/>
+                <constraint firstAttribute="bottom" secondItem="BN0-ge-nU5" secondAttribute="bottom" id="5MH-0V-f9d"/>
+                <constraint firstItem="BN0-ge-nU5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ow8-GQ-4Qh"/>
+                <constraint firstAttribute="trailing" secondItem="BN0-ge-nU5" secondAttribute="trailing" id="Pk1-ni-aBH"/>
+                <constraint firstItem="BEe-ND-o7n" firstAttribute="leading" secondItem="Cbe-BO-2hs" secondAttribute="leading" constant="40" id="Ush-rC-6Dv"/>
+                <constraint firstItem="Cbe-BO-2hs" firstAttribute="bottom" secondItem="BEe-ND-o7n" secondAttribute="bottom" constant="215" id="b7C-ae-zjv"/>
+                <constraint firstAttribute="trailing" secondItem="rhF-Za-5kV" secondAttribute="trailing" constant="40" id="gq3-vJ-mb6"/>
+                <constraint firstItem="Cbe-BO-2hs" firstAttribute="trailing" secondItem="BEe-ND-o7n" secondAttribute="trailing" constant="40" id="k2t-Al-qv8"/>
+                <constraint firstItem="BEe-ND-o7n" firstAttribute="top" secondItem="rhF-Za-5kV" secondAttribute="bottom" constant="29" id="rhW-mQ-6Jk"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginmainbg" width="390" height="844"/>
+        <image name="phonelogin" width="310" height="54"/>
+        <image name="yijiandenglu" width="310" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
