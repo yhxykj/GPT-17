@@ -1,0 +1,120 @@
+PODS:
+  - Ads-CN (6.0.1.2):
+    - Ads-CN/BUAdSDK (= 6.0.1.2)
+  - Ads-CN/BUAdSDK (6.0.1.2)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AlicloudFeedback (3.3.11):
+    - AlicloudUT
+    - AlicloudUtils
+  - AlicloudUT (5.2.0.16):
+    - AlicloudUTDID
+  - AlicloudUTDID (1.5.0.94)
+  - AlicloudUtils (1.4.1):
+    - AlicloudUTDID
+  - IQKeyboardManager (6.5.11)
+  - MarkdownKit (1.7.1)
+  - MJRefresh (3.7.6)
+  - SAMKeychain (1.5.3)
+  - SDAutoLayout (2.1.9)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
+  - SocketRocket (0.6.0)
+  - SVProgressHUD (2.2.5)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Ads-CN
+  - AFNetworking
+  - AlicloudFeedback (~> 3.3.9)
+  - IQKeyboardManager
+  - MarkdownKit
+  - MJRefresh
+  - SAMKeychain
+  - SDAutoLayout (~> 2.1.7)
+  - SDWebImage
+  - SocketRocket
+  - SVProgressHUD
+  - YBImageBrowser
+  - YYCategories
+  - YYImage (from `https://github.com/QiuYeHong90/YYImage.git`)
+  - YYText
+
+SPEC REPOS:
+  https://github.com/aliyun/aliyun-specs.git:
+    - AlicloudFeedback
+    - AlicloudUT
+    - AlicloudUTDID
+    - AlicloudUtils
+  https://github.com/CocoaPods/Specs.git:
+    - Ads-CN
+    - AFNetworking
+    - IQKeyboardManager
+    - MarkdownKit
+    - MJRefresh
+    - SAMKeychain
+    - SDAutoLayout
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - YBImageBrowser
+    - YYCategories
+    - YYText
+
+EXTERNAL SOURCES:
+  YYImage:
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+CHECKOUT OPTIONS:
+  YYImage:
+    :commit: 4164acb76e8979c0612530bd874e099a1fa51e9d
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+SPEC CHECKSUMS:
+  Ads-CN: 399dbdd4d25d63f3c768842ea50d0bcea8b1243c
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  AlicloudFeedback: ba557c220db35bd8f9c749c7fd4f86384328dbce
+  AlicloudUT: 6d1cf30d57d096b7e9bb4b069dd0ba6ad59a3338
+  AlicloudUTDID: 7323c443dcdf9a73e2224dc6ce51703671d7a765
+  AlicloudUtils: 873a76615bebcee8b1996f20820d366e433c3eab
+  IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
+  MarkdownKit: 0b15195c63cf3e39387949c4bdeccde0055e252a
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 20ec986d18a8d0ad421619d166a9e628097e2433
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 8d9c294f2c1e03a0f514a73afab566690e89eb1d
+
+COCOAPODS: 1.15.2
