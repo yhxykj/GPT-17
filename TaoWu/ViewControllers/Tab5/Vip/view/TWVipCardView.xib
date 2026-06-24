@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TWVipCardView">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-mI-ofI">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbk-iv-dWt">
+                    <rect key="frame" x="49.666666666666657" y="265.66666666666669" width="291" height="313.00000000000006"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_card" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-Qj-aPo">
+                            <rect key="frame" x="0.0" y="0.0" width="291" height="263"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="263" id="5gC-v3-c4D"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLO-pP-d2p">
+                            <rect key="frame" x="120.33333333333334" y="262.99999999999994" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="fET-UE-E6S"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="vip_gb"/>
+                            <connections>
+                                <action selector="tw_closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7vd-M5-3HJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2J-O0-bJA">
+                            <rect key="frame" x="26" y="195" width="241" height="49"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="tw_enterVipAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eBS-TT-jPi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="r2J-O0-bJA" firstAttribute="top" secondItem="mbk-iv-dWt" secondAttribute="top" constant="195" id="19y-un-go5"/>
+                        <constraint firstAttribute="width" constant="291" id="21n-XM-wPz"/>
+                        <constraint firstItem="r2J-O0-bJA" firstAttribute="leading" secondItem="mbk-iv-dWt" secondAttribute="leading" constant="26" id="63t-ad-qQb"/>
+                        <constraint firstItem="uLO-pP-d2p" firstAttribute="top" secondItem="r2J-O0-bJA" secondAttribute="bottom" constant="19" id="6Sr-z6-V9s"/>
+                        <constraint firstAttribute="height" constant="313" id="IHp-P1-xsB"/>
+                        <constraint firstAttribute="bottom" secondItem="uLO-pP-d2p" secondAttribute="bottom" id="SGI-M2-Rwg"/>
+                        <constraint firstAttribute="trailing" secondItem="1jY-Qj-aPo" secondAttribute="trailing" id="SLu-LU-I6e"/>
+                        <constraint firstAttribute="trailing" secondItem="r2J-O0-bJA" secondAttribute="trailing" constant="24" id="Sld-bb-WwD"/>
+                        <constraint firstItem="uLO-pP-d2p" firstAttribute="centerX" secondItem="mbk-iv-dWt" secondAttribute="centerX" id="fp8-xU-Y2d"/>
+                        <constraint firstItem="1jY-Qj-aPo" firstAttribute="top" secondItem="mbk-iv-dWt" secondAttribute="top" id="hwp-Wl-Ggh"/>
+                        <constraint firstItem="uLO-pP-d2p" firstAttribute="top" secondItem="1jY-Qj-aPo" secondAttribute="bottom" id="k40-wf-dXb"/>
+                        <constraint firstItem="1jY-Qj-aPo" firstAttribute="leading" secondItem="mbk-iv-dWt" secondAttribute="leading" id="qUk-6G-K1d"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbL-IR-auf">
+                    <rect key="frame" x="60" y="227" width="270" height="390"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hy_gaoji_s" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-uP-BJo">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="330"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-JH-Geu">
+                            <rect key="frame" x="110" y="340" width="50" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Gjh-Li-p9w"/>
+                                <constraint firstAttribute="height" constant="45" id="zbp-XF-rYj"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="vip_gb"/>
+                            <connections>
+                                <action selector="tw_closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Nx-mf-5mm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-qB-sWC">
+                            <rect key="frame" x="35" y="251" width="202" height="45"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="tw_enterVipAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aO3-IJ-Ycx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xyK-qB-sWC" firstAttribute="top" secondItem="YbL-IR-auf" secondAttribute="top" constant="251" id="1DJ-Jr-FET"/>
+                        <constraint firstItem="Ddg-uP-BJo" firstAttribute="top" secondItem="YbL-IR-auf" secondAttribute="top" id="3pw-BT-CPL"/>
+                        <constraint firstAttribute="trailing" secondItem="xyK-qB-sWC" secondAttribute="trailing" constant="33" id="5pC-1s-pUf"/>
+                        <constraint firstItem="Ac4-JH-Geu" firstAttribute="top" secondItem="Ddg-uP-BJo" secondAttribute="bottom" constant="10" id="BJO-eE-lGt"/>
+                        <constraint firstItem="Ac4-JH-Geu" firstAttribute="top" secondItem="xyK-qB-sWC" secondAttribute="bottom" constant="44" id="TMm-CR-2a7"/>
+                        <constraint firstAttribute="width" constant="270" id="f7r-q9-n05"/>
+                        <constraint firstItem="Ddg-uP-BJo" firstAttribute="leading" secondItem="YbL-IR-auf" secondAttribute="leading" id="gnI-91-Et1"/>
+                        <constraint firstItem="xyK-qB-sWC" firstAttribute="leading" secondItem="YbL-IR-auf" secondAttribute="leading" constant="35" id="lDA-6g-FBI"/>
+                        <constraint firstAttribute="trailing" secondItem="Ddg-uP-BJo" secondAttribute="trailing" id="lkX-x0-DqS"/>
+                        <constraint firstItem="Ac4-JH-Geu" firstAttribute="centerX" secondItem="YbL-IR-auf" secondAttribute="centerX" id="wJe-Ox-A9M"/>
+                        <constraint firstAttribute="height" constant="390" id="wWs-gX-I0e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mbk-iv-dWt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0jA-kT-pL7"/>
+                <constraint firstItem="ESO-mI-ofI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0kD-qK-Ooj"/>
+                <constraint firstItem="YbL-IR-auf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4iT-zf-QHe"/>
+                <constraint firstItem="ESO-mI-ofI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BQR-85-fR4"/>
+                <constraint firstAttribute="bottom" secondItem="ESO-mI-ofI" secondAttribute="bottom" id="CuL-Q9-WMs"/>
+                <constraint firstItem="YbL-IR-auf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YmM-00-0nS"/>
+                <constraint firstItem="mbk-iv-dWt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bNx-75-hfD"/>
+                <constraint firstAttribute="trailing" secondItem="ESO-mI-ofI" secondAttribute="trailing" id="kH5-U0-ePc"/>
+            </constraints>
+            <connections>
+                <outlet property="tw_gaoji_view" destination="YbL-IR-auf" id="YUt-A3-i5I"/>
+                <outlet property="tw_normal_view" destination="mbk-iv-dWt" id="D1b-jY-gFC"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hy_gaoji_s" width="270" height="330"/>
+        <image name="vip_card" width="291" height="263"/>
+        <image name="vip_gb" width="30" height="30"/>
+    </resources>
+</document>
